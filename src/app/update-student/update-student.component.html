@@ -1,0 +1,25 @@
+  <form [formGroup]="updateStudentForm" (ngSubmit)="updateStudent()">
+    <label for="rollNo">Roll Number:</label>
+    <input id="rollNo" formControlName="rollNo" />
+  
+    <label for="name">Name:</label>
+    <input id="name" formControlName="name" />
+  
+    <label for="age">Age:</label>
+    <input id="age" formControlName="age" />
+  
+    <label for="email">Email:</label>
+    <input id="email" formControlName="email" />
+  
+    <label for="date">Date:</label>
+    <input id="date" formControlName="date" type="date" />
+  
+    <label for="isMale">Gender:</label>
+    <input id="isMale" formControlName="isMale" type="checkbox" />
+  
+    <button type="submit">Update Student</button>
+  </form>
+  
+
+
+  

@@ -1,0 +1,8 @@
+<div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+<h2>Delete Student</h2>
+<p>Are you sure you want to delete the student <strong>{{ studentName }}</strong>?</p>
+
+<button (click)="deleteStudent()">Delete</button>
+<a routerLink="/students">Cancel</a>
+

@@ -1,0 +1,27 @@
+<div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+<h2>Student List</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Roll No</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Email</th>
+      <th>Date</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students">
+      <td>{{ student.rollNo }}</td>
+      <td>{{ student.name }}</td>
+      <td>{{ student.age }}</td>
+      <td>{{ student.email }}</td>
+      <td>{{ student.date }}</td>
+      <td>
+        <button (click)="deleteStudent(student.rollNo)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
